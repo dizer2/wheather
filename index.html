@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="./img/icon.png">
+	<link rel="stylesheet" href="./style/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.6/vivus.js"></script>
+	<title>Wheather</title>
+</head>
+<body>
+
+	<div class="loading">
+		<div class="loader">
+			<div class="inner one"></div>
+			<div class="inner two"></div>
+			<div class="inner three"></div>
+		  </div>
+	</div>
+	
+	<div class="wrap">
+		<div class="container" id="wheather__bg">
+			<div class="left__container">
+				<div class="header">
+					<p class="header__logo">the.weather <span class="logo__first-letter">y</span>urii</p>
+					<img class="burger" src="./img/burger.svg" alt="burger">
+
+				</div>
+				<div class="main">
+					<div class="main__text-box">
+						<p id="mainTemp" class="main__temperature">18<span>°</span></p>
+						<div class="main__text-city">
+							<div class="main__city-box">
+								<p class="main__city">London</p>
+								<div id="iconWeahter" class="main__icon"></div>
+								
+							</div>
+							<p class="data"><span id="clock">19</span></span> - <span id="day">Monday</span>, <span id="day__number">9</span> <span id="mounth">Sep</span></p>
+
+
+						</div>
+
+					</div>
+				</div>
+				<object class="line" id="linea" type="image/svg+xml" data="./img/line.svg"></object>
+
+			</div>
+			<div class="right__container">
+				<div class="right__header">
+					<div class="cheched__location-box">
+						<input placeholder="Another location" id="chaned__location" class="chaned__location" type="text">
+					</div>
+					<div id="newLocation" class="cheched__location-icon">
+						<object class="search__icon" id="search__icon" type="image/svg+xml" data="./img/seacrh.svg"></object>
+					</div>
+
+				</div>
+				
+
+				<div class="right__box right__margin">
+					<p class="right__detalie">Wheater Detalis</p>
+					<div class="detalis__box">
+						<p class="detail__description detail__description-margin">Feels like</p>
+						<p id="feels__like" class="detail__description">20°</p>
+
+					</div>
+	
+
+					<div class="detalis__box">
+						<p class="detail__description">Humidity</p>
+						<p id="humidity" class="detail__description">86%</p>
+
+					</div>
+
+					<div class="detalis__box">
+						<p class="detail__description">Wind</p>
+						<p id="wind" class="detail__description">8km/h</p>
+
+					</div>
+
+					<div class="detalis__box detali__line"></div>
+
+				</div>
+
+				<div class="right__box right__margin2">
+					<p class="right__detalie">Next day</p>
+					<div class="detalis__box">
+						<p id="day1Text" class="detail__description detail__description-margin">Tuesday</p>
+						<p id="day1" class="detail__description">20°</p>
+
+					</div>
+					<div class="detalis__box">
+						<p id="day2Text"  class="detail__description">Wednesday</p>
+						<p id="day2" class="detail__description">27°</p>
+
+					</div>
+
+					<div class="detalis__box">
+						<p id="day3Text" class="detail__description">Thursday</p>
+						<p  id="day3" class="detail__description">6°</p>
+
+					</div>
+
+					<div class="detalis__box">
+						<p id="day4Text" class="detail__description">Friday</p>
+						<p id="day4" class="detail__description">-3.0°</p>
+
+					</div>
+
+					<div class="detalis__box">
+						<p id="day5Text" class="detail__description">Saturday</p>
+						<p id="day5" class="detail__description">2°</p>
+
+					</div>
+
+	
+
+
+					<!-- <div class="detalis__box detali__line"></div> -->
+
+				</div>
+
+
+			</div>
+
+		</div>
+
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+	<script src="./script/script.js"></script>
+</body>
+</html>
