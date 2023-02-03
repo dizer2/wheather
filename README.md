@@ -14,4 +14,4 @@
 
 ---
 
-https://yurii-dev.netlify.app/
+https://the-wheather-yurii.netlify.app/
